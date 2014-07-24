@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+{% load static %} <!--Loading the Static Files -->
+
+<html>
+    <head>
+        <title>Rango</title>
+	<link rel="stylesheet" href="{% static "css/base.css" %}"/> <!-- CSS files -->
+	<script src="{% static "js/jquery.js" %}"></script>
+    </head>
+
+    <body>
+        <h1>Including the Static Media</h1>
+        <img src="{% static "rango.jpg" %}"alt="Picture of Rango" /><!-- Adding the Rango img -->
+	<a href="/rango/about/">About</a><br />
+    </body>
+</html>
